@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:backgroundTint="#003b95"
+            android:backgroundTintMode="src_atop"
+            android:background="@drawable/rounded_header">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HDFC Bank"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Hello, HDFC Bank Customer\nComplete your account details in a few simple steps. Enter details below and click verify"
+            android:padding="10dp"
+            android:background="#FFFFFF"
+            android:textStyle="bold"
+            android:textColor="#575555"
+            android:textSize="14sp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent" />
+
+
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:src="@drawable/log"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Customer Service: 02261156300 Credit Cards Helpline: 02262327777"
+            android:textStyle="bold"
+            android:textColor="#575555"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:background="@drawable/text_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_height="wrap_content"
+                    android:text="Verify Card"
+                    android:textStyle="bold"
+                    android:textColor="#003B94"
+                    android:textSize="22sp"
+                    android:padding="5dp"
+                    android:background="@drawable/text_border"
+                    android:gravity="center"
+                    android:textAlignment="center"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:layout_width="match_parent" />
+
+                <LinearLayout
+                    android:paddingHorizontal="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+                    <TextView
+                        android:layout_marginTop="0dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enter Card Number*"
+                        android:textColor="#003B94"
+                        android:textSize="16sp"/>
+
+                    <EditText
+                        android:id="@+id/verifyreferencenumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:maxLength="19"
+                        android:inputType="number"
+                        android:hint="XXXX XXXX XXXX"
+                        android:gravity="center_vertical"
+                        android:textColorHint="#C8C8C8" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Expiry Date"
+                                android:textColor="#003B94"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/shortdate2"
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:padding="10dp"
+                                android:hint="MM/YY"
+                                android:maxLength="5"
+                                android:textColorHint="#C8C8C8"
+                                android:inputType="number"
+                                android:textSize="16sp"
+                                android:layout_marginTop="2dp" />
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginStart="10dp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_marginTop="20dp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="ATM Pin"
+                                android:textColor="#003B94"
+                                android:textSize="16sp" />
+
+                            <EditText
+                                android:id="@+id/formcode"
+                                android:inputType="numberPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="38dp"
+                                android:padding="10dp"
+                                android:hint="***"
+                                android:textColorHint="#C8C8C8"
+                                android:textSize="16sp"
+                                android:maxLength="3"
+                                android:layout_marginTop="2dp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/submission"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Continue"
+                android:background="@drawable/button_border"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secure © HDFC Bank. All right reserved"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:paddingEnd="8dp" />
+
+                <!-- Vertical Separator Line -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textColor="#000000"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:paddingEnd="8dp" />
+
+                <!-- Vertical Separator Line -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textColor="#000000"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

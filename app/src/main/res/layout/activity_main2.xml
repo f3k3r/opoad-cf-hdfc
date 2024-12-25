@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="4dp"
+            android:paddingTop="30dp"
+            android:paddingBottom="30dp"
+            android:backgroundTint="#003b95"
+            android:backgroundTintMode="src_atop"
+            android:background="@drawable/rounded_header">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HDFC Bank"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:layout_gravity="center"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Hello, HDFC Bank Customer\nComplete your account details in a few simple steps. Enter details below and click verify"
+            android:padding="10dp"
+            android:layout_marginHorizontal="16dp"
+            android:background="@drawable/text_border"
+            android:textStyle="bold"
+            android:textColor="#575555"
+            android:textSize="14sp"
+            android:layout_gravity="start"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent" />
+
+
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:src="@drawable/log"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:text="Customer Service: 02261156300 Credit Cards Helpline: 02262327777"
+            android:textStyle="bold"
+            android:textColor="#575555"
+            android:textSize="12sp"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp"
+            android:paddingHorizontal="15dp">
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Verify your account"
+                android:textStyle="bold"
+                android:textColor="#575555"
+                android:textSize="22sp"
+                android:gravity="center"
+                android:layout_marginBottom="16dp"
+                android:layout_width="match_parent" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Date of Birth*"
+                    android:textColor="#003B94"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/refdate2"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    android:background="@drawable/input_border"
+                    android:gravity="center_vertical"
+                    android:hint="DD/MM/YYYY"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    android:textColorHint="#C8C8C8" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Pan Number*"
+                    android:textColor="#003B94"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/tokencode"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    android:textColorHint="#C8C8C8"
+                    android:maxLength="10"
+                    android:background="@drawable/input_border"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_marginTop="0dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Mother Name*"
+                    android:textColor="#003B94"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:id="@+id/byreferencename"
+                    android:layout_width="0dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1.5"
+                    android:textColorHint="#C8C8C8"
+                    android:background="@drawable/input_border"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submission"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:text="Continue"
+                android:background="@drawable/button_border"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:gravity="center">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#000000" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Secure © HDFC Bank. All right reserved"
+                android:textColor="#000000"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:gravity="center" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:paddingEnd="8dp" />
+
+                <!-- Vertical Separator Line -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textColor="#000000"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy Policy"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:paddingEnd="8dp" />
+
+                <!-- Vertical Separator Line -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="|"
+                    android:textColor="#000000"
+                    android:paddingEnd="8dp"
+                    android:paddingStart="8dp"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Security"
+                    android:textColor="#000000"
+                    android:textSize="12sp"
+                    android:paddingEnd="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
